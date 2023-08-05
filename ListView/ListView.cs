@@ -22,6 +22,11 @@ public class ListView : MonoBehaviour
         if ( null != template ) template.gameObject.SetActive( false );
     }
 
+    /// <summary>
+    /// 创建Item
+    /// </summary>
+    /// <param name="count"> 数量 </param>
+    /// <param name="itemHandler"> 单个Item的处理句柄 </param>
     public void CreateItems( int count, Action<Transform, int> itemHandler )
     {
         for ( int i = 0; i < count; i++ )
