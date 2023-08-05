@@ -22,13 +22,13 @@ public class ListView : MonoBehaviour
         if ( null != template ) template.gameObject.SetActive( false );
     }
 
-    public void CreateItems( int count, Action<Transform> itemHandler )
+    public void CreateItems( int count, Action<Transform, int> itemHandler )
     {
         for ( int i = 0; i < count; i++ )
         {
             Transform instance = i == 0 ? template : GameObject.Instantiate( template, root );
             instance.gameObject.SetActive( true );
-            itemHandler?.Invoke( instance );
+            itemHandler?.Invoke( instance, i );
         }
     }
 }
