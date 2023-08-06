@@ -14,7 +14,7 @@ using UnityEngine;
 public class ListView : MonoBehaviour
 {
 
-    [SerializeField] private Transform root;
+    [SerializeField] private Transform root; 
     [SerializeField] private Transform template;
 
     private void Awake()
