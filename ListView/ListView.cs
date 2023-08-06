@@ -23,7 +23,7 @@ public class ListView : MonoBehaviour
     }
 
     /// <summary>
-    /// 创建Item
+    /// 动态创建Item
     /// </summary>
     /// <param name="count"> 数量 </param>
     /// <param name="itemHandler"> 单个Item的处理句柄 </param>
